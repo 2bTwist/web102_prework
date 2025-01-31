@@ -194,3 +194,44 @@ secondGameElement.innerHTML = `<strong>${secondGame.name}</strong> - Raised: $${
 // do the same for the runner up item
 firstGameContainer.appendChild(firstGameElement);
 secondGameContainer.appendChild(secondGameElement);
+
+// Grab the search input and button
+const searchInput = document.getElementById("search-input");
+const searchBtn = document.getElementById("search-btn");
+
+function searchGames() {
+
+
+    const query = searchInput.value.toLowerCase().trim();
+
+    if (query === "") return;
+    
+    deleteChildElements(gamesContainer);
+
+    // Filter games based on the search query
+    const filteredGames = GAMES_JSON.filter(game => 
+        game.name.toLowerCase().includes(query)
+    );
+
+    // If no games are found, display a message
+    if (filteredGames.length === 0) {
+        const noResultsMessage = document.createElement("p");
+        noResultsMessage.textContent = `No games found for "${searchInput.value}". Try another search!`;
+        noResultsMessage.style.textAlign = "center";
+        noResultsMessage.style.fontSize = "18px";
+        noResultsMessage.style.color = "#ff4c4c"; // A red color to indicate no results
+        noResultsMessage.style.fontWeight = "bold";
+        gamesContainer.appendChild(noResultsMessage);
+    } else {
+        // Display the filtered games
+        addGamesToPage(filteredGames);
+    }
+}
+
+searchBtn.addEventListener("click", searchGames);
+
+searchInput.addEventListener("keypress", (event) => {
+    if(event.key === "Enter") {
+        searchGames();
+    }
+})
