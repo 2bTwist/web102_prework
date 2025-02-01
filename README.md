@@ -37,10 +37,10 @@ GIF created with ... <a href="https://www.cockos.com/licecap/">LiceCap GIF </a>
 
 Describe any challenges encountered while building the app.
 
-DOM Manipulation – Managing dynamic updates for game cards and filtering efficiently.
-Search Edge Cases – Handling empty searches and case-insensitive queries properly.
-Sorting & Filtering – Implementing logic for funded/unfunded games and top-funded sorting.
-Responsive Glass UI – Balancing aesthetics with readability and responsiveness.
+<p>DOM Manipulation – Managing dynamic updates for game cards and filtering efficiently.</p>
+<p>Search Edge Cases – Handling empty searches and case-insensitive queries properly.</p>
+<p>Sorting & Filtering – Implementing logic for funded/unfunded games and top-funded sorting.</p>
+<p>Responsive Glass UI – Balancing aesthetics with readability and responsiveness.</p>
 
 ## License
 
