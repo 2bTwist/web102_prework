@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='/web102_prework/assets/Walkthrough.gif' title='Video Walkthrough' width='100px' alt='Video Walkthrough' />
+<img src='/web102_prework/assets/Walkthrough.gif' title='Video Walkthrough' width='500px' alt='Video Walkthrough' />
 
 
 GIF created with ... <a href="https://www.cockos.com/licecap/">LiceCap GIF </a>
